@@ -2,13 +2,33 @@
   font-family: norse-bold;
   src: url("Norse-Bold.otf");
 }
+html,
+body,
+div,
+h1,
+h2,
+a,
+img,
+fieldset,
+form,
+label,
+legend,
+footer,
+header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
 html {
   font-family: norse-bold, sans-serif;
 }
 body {
   display: flex;
-  height: 100vh;
+  height: 100%;
 }
 
 .leftcontainer {
@@ -23,17 +43,13 @@ body {
   display: flex;
   color: white;
   font-size: 100px;
-  background-color: rgb(0, 0, 0, 0.7);
+  background-color: rgb(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-  padding: 5%;
-  position: relative;
-  top: 170px;
+  margin-top: 200px;
+  padding: 10px;
 }
 
-p {
-  margin: 0;
-}
 img {
   width: auto;
   height: 150px;
@@ -42,4 +58,81 @@ img {
 footer {
   color: white;
   text-align: center;
+  margin-bottom: 15px;
+}
+
+.rightcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: #e5e7ebf5;
+}
+
+header {
+  padding-left: 35px;
+  margin-top: 175px;
+  margin-right: 175px;
+  font-size: 24px;
+}
+
+.rightfooter {
+  padding-left: 35px;
+}
+
+legend {
+  font-size: 20px;
+}
+.name,
+.contact,
+.password {
+  display: flex;
+  margin-top: 20px;
+  gap: 75px;
+}
+
+label,
+input,
+#match {
+  display: block;
+}
+
+.fields {
+  background-color: white;
+  padding: 25px 35px;
+  box-shadow: 5px 5px rgba(218, 219, 218, 0.76);
+}
+button {
+  background-color: #596d48;
+  color: white;
+  border-radius: 4px;
+  border: #596d48;
+  padding: 10px 30px;
+  margin-top: 35px;
+  margin-left: 35px;
+}
+
+input {
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+}
+input:focus {
+  outline: none;
+  border: 1px solid lightskyblue;
+  box-shadow: 2px 2px rgba(218, 219, 218, 0.76);
+}
+
+a {
+  color: #596d48;
+  text-decoration: none;
+}
+
+#match {
+  color: red;
+}
+
+.invalid {
+  outline: none;
+
+  border: 1px solid red;
 }
